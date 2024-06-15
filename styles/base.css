@@ -7,6 +7,10 @@ body {
     color: #333;
 }
 
+h1,h2,h3,h4,h5{
+    font-family: 'Roboto', sans-serif;
+}
+
 header {
     display: flex;
     background-color: #4CAF50;
@@ -63,7 +67,7 @@ main {
     padding: 20px;
 }
 
-main h2 {
+main h1 {
     text-align: center;
     color: #4CAF50;
 }

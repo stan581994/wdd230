@@ -22,6 +22,8 @@ function setFooterDates() {
     footer.appendChild(currentYearPara);
     footer.appendChild(flagImg);
     footer.appendChild(lastModifiedPara);
+
+    console.log("testing if JS is running");
 }
     // Run the function once the DOM is fully loaded
     document.addEventListener('DOMContentLoaded', setFooterDates);

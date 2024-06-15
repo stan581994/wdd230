@@ -21,13 +21,7 @@ function setFooterDates() {
     // Append the paragraphs to the footer
     footer.appendChild(currentYearPara);
     footer.appendChild(flagImg);
-
-
-    // Create a new paragraph for last modified date
-    const lastModifiedContainer = document.createElement('p');
-    lastModifiedContainer.appendChild(lastModifiedPara);
-    footer.appendChild(lastModifiedContainer);
-
+    footer.appendChild(lastModifiedPara);
 }
     // Run the function once the DOM is fully loaded
     document.addEventListener('DOMContentLoaded', setFooterDates);

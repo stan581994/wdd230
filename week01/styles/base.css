@@ -1,0 +1,95 @@
+  /* Primary Color: Navy Blue */
+  header, footer {
+    background-color: #003366;
+    color: #FFFFFF;
+}
+
+h1, h2, h3 {
+    color: #003366;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    color: #FFD700;
+}
+
+.navbar a.active {
+    border-bottom: 2px solid #FFD700; /* Accent with secondary color */
+}
+
+/* Secondary Color: Gold */
+button.primary {
+    background-color: #003366;
+    color: #FFFFFF;
+    border: 1px solid #003366;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+button.secondary {
+    background-color: #FFD700;
+    color: #003366;
+    border: 1px solid #FFD700;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+a {
+    color: #FFD700;
+}
+
+/* Background and Text Colors */
+body {
+    background-color: #F5F5F5;
+    color: #333333;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.container {
+    background-color: #FFFFFF;
+    border: 1px solid #F5F5F5;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+/* Specific Colors for Text */
+.navy-text {
+    color: #003366;
+}
+
+.gold-text {
+    color: #FFD700;
+}
+
+.grey-text {
+    color: #333333;
+}
+
+.light-grey-text {
+    color: #F5F5F5;
+}
+
+.white-text {
+    color: #FFFFFF;
+}

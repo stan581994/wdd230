@@ -1,0 +1,18 @@
+@media (min-width: 768px) {
+    .grid-container {
+        display: flex; /* Ensure this is a flex container */
+        flex-direction: row; /* Align items in a row */
+        justify-content: center; /* Center items horizontally */
+        flex-wrap: wrap; /* Allow items to wrap as needed */
+    }
+    .company-spotlights {
+        display: flex; /* Ensure this is a flex container */
+        flex-direction: row; /* Align items in a row */
+        justify-content: center; /* Center items horizontally */
+        flex-wrap: wrap; /* Allow items to wrap as needed */
+    }
+    .spotlight {
+        flex: 1; /* Allow each item to grow */
+        
+    }
+}

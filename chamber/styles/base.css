@@ -1,0 +1,78 @@
+body {
+    background-color: #F5F5F5;
+    color: #333333;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: #003366;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.header-left {
+    display: flex;
+    align-items: center;
+}
+.header-left-title{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+header img {
+    height: 100px; /* Adjust based on your logo's size */
+}
+
+header h1, header h3 {
+    color: #FFFFFF;
+    margin: 0;
+    padding-left: 20px; /* Space between logo and text */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 20px; /* Space between navigation items */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #FFD700;
+    font-weight: bold;
+}
+
+.hero img {
+    width: 100%;
+
+    height: auto;
+    display: block;
+}
+
+.call-to-action,
+.current-events,
+.weather-card,
+.company-spotlights {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.call-to-action a,
+.spotlight h4 {
+    color: #003366;
+}
+
+footer {
+    background-color: #333333;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer a {
+    color: #FFD700;
+}

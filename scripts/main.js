@@ -6,4 +6,9 @@ document.querySelector('.hamburger').addEventListener('click', function() {
 const darkModeToggle = document.getElementById('darkModeToggle');
 darkModeToggle.addEventListener('click', () => {
     document.body.classList.toggle('dark-mode');
+    if(darkModeToggle.textContent==="🔆"){
+        darkModeToggle.textContent = "🕶️";
+    }else{
+        darkModeToggle.textContent = "🔆";
+    }
 });

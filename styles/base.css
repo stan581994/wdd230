@@ -7,15 +7,21 @@ body {
     color: #333;
 }
 
-h1,h2,h3,h4,h5{
+h1,
+h2,
+h3,
+h4,
+h5 {
     font-family: 'Roboto', sans-serif;
 }
 
 header {
     display: flex;
     background-color: #4CAF50;
-    justify-content: center; /* Center items horizontally */
-    padding: 20px 0; /* Padding top and bottom */
+    justify-content: center;
+    /* Center items horizontally */
+    padding: 20px 0;
+    /* Padding top and bottom */
     color: white;
     padding: 10px 0;
     text-align: center;
@@ -123,23 +129,55 @@ footer {
 
 body.dark-mode main {
     background-color: #333;
-    color: #f0f0f0; 
+    color: #f0f0f0;
 }
 
 body.dark-mode main a {
-    color: #4dd0e1; 
+    color: #4dd0e1;
 }
 
 body.dark-mode .card {
-    background-color: #424242; 
-    color: #ffffff; 
+    background-color: #424242;
+    color: #ffffff;
 }
 
-body.dark-mode h1{
-    color: #ffffff; 
+body.dark-mode h1 {
+    color: #ffffff;
 }
 
 body.dark-mode footer {
     background-color: #ffffff;
-    color: #424242; 
+    color: #424242;
+}
+
+#darkModeToggle {
+    margin-left: 10rem;
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#darkModeToggle:hover {
+    background-color: #f0f0f0;
+    color: #333;
+   
+}
+
+body.dark-mode #darkModeToggle {
+    border-color: #333;
+
+    color: #fff;
+
+    background-color: transparent;
+    border: 2px solid transparent;
+}
+
+body.dark-mode #darkModeToggle:hover {
+    background-color: #333;
+    /* Dark background on hover in dark mode */
+    color: #f0f0f0;
+    /* Light text color on hover in dark mode */
 }

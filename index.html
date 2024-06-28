@@ -14,6 +14,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="styles/base.css" />
     <link rel="stylesheet" href="styles/larger.css" />
+    <link rel="stylesheet" href="styles/smaller.css" />
     <link rel="icon" href="images/favicon.ico" />
     <link rel="stylesheet" href="styles/normalize.css">
 
@@ -28,9 +29,11 @@
     <header>
         <img src="images/profile_pic.jpg" alt="Steven Tan" width="75" height="100" />
         <span>Steven Tan</span>
+        <button id="darkModeToggle">Dark Mode</button>
     </header>
 
-    <nav>
+    <button class="hamburger">≡</button>
+    <nav class="menu">
         <ul>
             <li class="active"><a href="#">Home</a></li>
             <li><a href="#">Chamber</a></li>
@@ -67,6 +70,7 @@
     </footer>
 
     <script src="scripts/getDates.js"></script>
+    <script src="scripts/main.js"></script>
 </body>
 
 </html>

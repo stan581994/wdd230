@@ -6,4 +6,7 @@
     .grid-container {
         grid-template-columns: 2fr 1fr;
     }
+    .menu {
+        display: block;
+    }
 }

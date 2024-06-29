@@ -151,7 +151,7 @@ body.dark-mode footer {
 }
 
 #darkModeToggle {
-    margin-left: 10rem;
+    margin-left: 100rem;
     cursor: pointer;
     background-color: transparent;
     border: 2px solid transparent;

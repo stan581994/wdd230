@@ -36,11 +36,22 @@ header h3 {
     /* Space between logo and text */
 }
 
+/* Navigation styling */
+/* Hide menu initially */
+.nav {
+    display: none;
+    transition: all 0.3s ease;
+}
+
+/* Class to display menu */
+.showMenu {
+    display: flex;
+    flex-direction:row;
+}
 nav ul {
     list-style-type: none;
     padding: 0;
-    display: flex;
-    gap: 20px;
+    display: block;
     /* Space between navigation items */
 }
 
@@ -48,7 +59,32 @@ nav ul li a {
     text-decoration: none;
     color: #FFD700;
     font-weight: bold;
+    list-style-type: none;
 }
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.menu li:last-child {
+    margin-right: 30px; /* Adjust the value as needed */
+}
+
+/* Hamburger Button Styling */
+.hamburger {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    transition: transform 0.3s ease;
+}
+
+/* Animation class for when the menu is open */
+.hamburger.open {
+    transform: rotate(45deg);
+}
+
+
 
 .hero {
     position: relative;
@@ -64,19 +100,14 @@ nav ul li a {
     object-fit: cover;
 }
 
-.call-to-action {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #FFFFFF;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    width: 30%;
-    color: #003366;
-    /* Text color */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-    /* Text shadow for better readability */
+.hero .call-to-action {
+    position: relative;
+    left: auto;
+    top: auto;
+    transform: none;
+    width: 90%; /* Adjust the width on smaller screens */
+    margin: 0 auto; /* Center the call-to-action */
+    padding: 10px;
 }
 
 .call-to-action h3 {
@@ -192,33 +223,34 @@ footer a {
 .spotlight {
     flex: 1;
     min-width: 250px;
-    /* Minimum width before wrapping */
+
     max-width: calc(33.333% - 20px);
     background-color: #f0f0f0;
-    /* Light grey background */
+
     border-radius: 8px;
-    /* Rounded corners */
+
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    /* Subtle shadow */
+
     padding: 20px;
-    /* Padding inside each spotlight */
+
     flex-basis: calc(33.333% - 20px);
-    /* Each takes up a third of the container width minus gap */
+
     display: flex;
     flex-direction: column;
-    /* Stack the content vertically */
+
     align-items: center;
-    /* Center-align the content */
+
 }
 
 .spotlight h4 {
     margin: 10px 0;
-    /* Margin around the title */
+
 }
 
 .spotlight p {
     text-align: center;
-    /* Center-align the text */
     margin: 5px 0;
-    /* Margin around paragraphs */
+
 }
+
+

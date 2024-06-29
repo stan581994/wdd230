@@ -1,18 +1,120 @@
 @media (min-width: 768px) {
     .grid-container {
-        display: flex; /* Ensure this is a flex container */
-        flex-direction: row; /* Align items in a row */
-        justify-content: center; /* Center items horizontally */
-        flex-wrap: wrap; /* Allow items to wrap as needed */
+        display: flex;
+
+        flex-direction: row;
+
+        justify-content: center;
+
+        flex-wrap: wrap;
+
     }
+
     .company-spotlights {
-        display: flex; /* Ensure this is a flex container */
-        flex-direction: row; /* Align items in a row */
-        justify-content: center; /* Center items horizontally */
-        flex-wrap: wrap; /* Allow items to wrap as needed */
+        display: flex;
+        flex-direction: row;
+
+        justify-content: center;
+
+        flex-wrap: wrap;
+
     }
+
     .spotlight {
-        flex: 1; /* Allow each item to grow */
-        
+        flex: 1;
     }
+
+    .hero img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Style the call-to-action section for larger screens */
+    .hero .call-to-action {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-align: center;
+        max-width: 300px;
+        /* Adjust based on preference */
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.5);
+        /* Semi-transparent background */
+    }
+
+
+
+    .call-to-action h3 {
+        margin-bottom: 15px;
+        font-size: 34px;
+        /* Adjust font size as needed */
+    }
+
+    .call-to-action p {
+        margin-bottom: 20px;
+        font-size: 16px;
+        /* Adjust font size as needed */
+    }
+
+    .call-to-action a {
+        display: inline-block;
+        background-color: #FFD700;
+        color: #003366;
+        padding: 10px 20px;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        transition: background-color 0.3s ease;
+    }
+
+    .call-to-action a:hover {
+        background-color: #E6C200;
+        /* Slightly darker shade for hover effect */
+    }
+
+
+    /* Hamburger Menu Button - hide it on larger screens */
+    .hamburger {
+        display: none;
+    }
+
+    /* Navigation Menu */
+    .nav {
+        display: flex;
+        /* Show the nav by default on larger screens */
+    }
+
+    .menu{
+
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        gap: 20px;
+        /* Space between navigation items */
+    }
+
+
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        display: block;
+        /* Space between navigation items */
+    }
+
+
+    .menu li a {
+        padding: 10px;
+        /* Adjust padding or any other styles for larger screens */
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #FFD700;
+        font-weight: bold;
+        list-style-type: none;
+    }
+
 }

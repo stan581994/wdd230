@@ -254,3 +254,46 @@ footer a {
 }
 
 
+/* Mobile Navigation Style */
+.mobile-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #333;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+    z-index: 1000;
+}
+
+.mobile-nav a {
+    display: block;
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+}
+
+.nav {
+    display: none;
+}
+.hamburger {
+    cursor: pointer;
+    display: block;
+    /* Ensure the initial state is styled for the hamburger icon */
+}
+.mobile-nav {
+    display: none; /* Initially hidden */
+}
+.hamburger.is-active {
+    /* Instead of transforming, change content to "X" */
+    content: 'X'; /* This will not work directly on non-pseudo-elements */
+    font-size: 24px; /* Adjust size as needed */
+    line-height: 1; /* Adjust line height to center the "X" if needed */
+    transform: none; /* Remove any transformations */
+}
+
+.hamburger.is-active:before, .hamburger.is-active:after {
+    content: none; /* Hide the pseudo-elements */
+}
+

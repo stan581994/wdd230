@@ -117,4 +117,8 @@
         list-style-type: none;
     }
 
+    .mobile-nav {
+        display: none !important; /* Use !important to override any inline styles */
+    }
+
 }

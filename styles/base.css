@@ -126,6 +126,11 @@ footer {
     display: none;
 }
 
+body.darkMode body{
+    background-color: #333;
+    color: #f0f0f0;
+}
+
 
 body.dark-mode main {
     background-color: #333;

@@ -69,6 +69,17 @@ nav ul li.active a {
     background-color: #4CAF50;
 }
 
+.hero {
+    width: auto; /* Set the desired width */
+    height: 600px; /* Set the desired height */
+    overflow: hidden; /* Ensure content doesn't overflow */
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+  }
+
 main {
     padding: 20px;
 }
@@ -121,10 +132,56 @@ footer {
     gap: 10px;
 }
 
-/* Hide hamburger menu on larger screens */
+
+
+
 .hamburger {
-    display: none;
+    display: inline-block; /* Show hamburger menu */
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    position: relative;
+    width: 30px;
+    height: 25px;
 }
+
+.hamburger::before,
+.hamburger::after,
+.hamburger {
+    content: '';
+    display: block;
+    background-color: #333; /* Change color as needed */
+    height: 3px;
+    margin: 6px 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.hamburger.active::before {
+    transform: translateY(9px) rotate(45deg);
+}
+
+.hamburger.active::after {
+    transform: translateY(-9px) rotate(-45deg);
+}
+
+.hamburger.active {
+    background-color: transparent;
+}
+
+.hamburger:hover::before,
+.hamburger:hover::after,
+.hamburger:hover {
+    background-color: #555; /* Darker shade on hover */
+}
+
+.menu {
+    display: none; /* Hide menu items by default in mobile view */
+}
+
+.menu.active {
+    display: block; /* Show menu items when hamburger is active */
+}
+
 
 body.darkMode body{
     background-color: #333;

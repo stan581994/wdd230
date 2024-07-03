@@ -12,6 +12,21 @@
         display: block;
     }
 
+    /* Hide hamburger menu on larger screens */
+    .hamburger {
+        display: none;
+    }
+
+
+    .hero {
+        width: auto;
+        /* Set the desired width */
+        height: 750px;
+        /* Set the desired height */
+        overflow: hidden;
+        /* Ensure content doesn't overflow */
+    }
+
 
     .darkMode {
         background-color: #4CAF50;

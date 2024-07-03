@@ -21,7 +21,8 @@
     <meta property="og:title" content="Steven Tan - WDD 230 - Web Frontend Development" />
     <meta property="og:type" content="website " />
     <meta property="og:url" content="https://stan581994.github.io/wdd230/" />
-    <meta property="og:image" content="https://miro.medium.com/v2/resize:fit:720/format:webp/1*su0ZyF44lCGq5lOPVhv9-Q.jpeg" />
+    <meta property="og:image"
+        content="https://miro.medium.com/v2/resize:fit:720/format:webp/1*su0ZyF44lCGq5lOPVhv9-Q.jpeg" />
 </head>
 
 <body>
@@ -36,35 +37,39 @@
         </div>
     </header>
 
-    <button class="hamburger">≡</button>
-    <nav class="menu">
-        <ul>
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">Chamber</a></li>
-            <li><a href="#">Site Plan</a></li>
-            <li><a href="#">Form</a></li>
-        </ul>
-    </nav>
+    <div class="nav-container">
+        <button class="hamburger">≡</button>
+        <nav class="menu">
+            <ul>
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Chamber</a></li>
+                <li><a href="#">Site Plan</a></li>
+                <li><a href="#">Form</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="hero">
+        <picture>
+            <source media="(max-width: 400px)" srcset="images/hero-small.webp">
+            <source media="(max-width: 960px)" srcset="images/hero-main.webp">
+            <img src="images/hero-large-temple.webp" alt="Nigeria Temple">
+        </picture>
+        <span>San Antonio Texas Temple</span>
+    </div>
 
-    <main>
-        <div class="hero">
-            <picture>
-                <source media="(max-width: 400px)" srcset="images/hero-small.webp">
-                <source media="(max-width: 960px)" srcset="images/hero-main.webp">
-                <img src="images/hero-large-temple.webp" alt="Nigeria Temple">
-            </picture>
-        </div>
-    </main>
 
-    <main>
+    <main class="main-content">
         <h1>WDD 230: Web Frontend Development</h1>
         <div class="grid-container">
             <section class="card">
                 <h2>Learning Activities</h2>
                 <ul>
                     <li>Week 01:</li>
-                    <li>Week 02: <a href="https://codepen.io/stan581994/pen/NWVzYpx"> codePen assignment</a> , <a href="week02/bom.html">Book of Mormon Favorite Chapter List</a></li>
-                    <li>Week 03: <a href="week03/images/landscape.webp">WebP</a> , <a href="week03/lazyload.html"> Lazy Load web page</a> , <a href="week03/responsive-images.html"> responsive-images</a></li>
+                    <li>Week 02: <a href="https://codepen.io/stan581994/pen/NWVzYpx"> codePen assignment</a> , <a
+                            href="week02/bom.html">Book of Mormon Favorite Chapter List</a></li>
+                    <li>Week 03: <a href="week03/images/landscape.webp">WebP</a> , <a href="week03/lazyload.html"> Lazy
+                            Load web page</a> , <a href="week03/responsive-images.html"> responsive-images</a>, <a
+                            href="week03/bom.html"> Local Storage</a></li>
                     <li>Week 04:</li>
                     <li>Week 05:</li>
                     <li>Week 06:</li>
@@ -75,11 +80,16 @@
                 <h2>Information</h2>
                 <p>Dasmariñas City, Cavite</p>
                 <p>46 °C, Sunshine ☀️ </p>
-                <p>Page Visits: 15</p>
+                <p>Page Visits: <span class="visits"></span></p>
             </section>
         </div>
     </main>
-
+    <div class="map-container">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d30928.22963822851!2d120.97328049999999!3d14.309765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sph!4v1719994367125!5m2!1sen!2sph"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
     <footer>
     </footer>
 

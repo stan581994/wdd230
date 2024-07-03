@@ -15,6 +15,32 @@ h5 {
     font-family: 'Roboto', sans-serif;
 }
 
+  /* background-color: #4CAF50; */
+
+    /* Position the dark mode toggle container */
+    .darkMode {
+        position: fixed; /* Use 'fixed' to keep it in view, or 'absolute' for within a positioned parent */
+        top: 10px; /* Adjust as needed */
+        right: 10px; /* Adjust as needed */
+        z-index: 1000; /* Ensure it's above other content */
+    }
+    
+    /* Style the dark mode toggle button */
+    #darkModeToggle {
+        background-color: #333; /* Dark background for contrast */
+        color: #fff; /* Light text color for visibility */
+        border: none; /* Remove default border */
+        padding: 10px 15px; /* Add some padding for a larger clickable area */
+        font-size: 1rem; /* Adjust font size as needed */
+        cursor: pointer; /* Change cursor to indicate it's clickable */
+        border-radius: 5px; /* Round the corners for a softer look */
+        transition: background-color 0.3s; /* Smooth transition for hover effect */
+    }
+    
+    #darkModeToggle:hover {
+        background-color: #555; /* Slightly lighter on hover for feedback */
+    }
+
 header {
     display: flex;
     background-color: #4CAF50;
@@ -39,6 +65,17 @@ header span {
     font-size: 3.5rem;
     font-weight: 700;
     color: #f7f4f4;
+}
+
+.main-content {
+    padding: 20px; /* Adds padding inside the main content for spacing */
+    margin-bottom: 100px; /* Adds space between the main content and the footer */
+    background-color: #f9f9f9; /* Optional: Adds a background color */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Optional: Adds a subtle shadow for depth */
+}
+
+.nav-container {
+    background-color: #333;
 }
 
 nav {
@@ -70,15 +107,26 @@ nav ul li.active a {
 }
 
 .hero {
-    width: auto; /* Set the desired width */
-    height: 600px; /* Set the desired height */
-    overflow: hidden; /* Ensure content doesn't overflow */
+    width: auto;
+    overflow: hidden;
+
 }
 
 .hero img {
     width: 100%;
     height: auto;
-  }
+    display: block;
+}
+
+.hero span {
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    width: 80%;
+    background-color: rgba(255,255,255,0.5);
+    padding: 1rem;
+    text-align: center;
+}
 
 main {
     padding: 20px;
@@ -107,11 +155,11 @@ main h1 {
     color: white;
     padding: 10px;
     margin: -20px -20px 20px -20px;
-    /* Adjusting margin to cover the full width of the card */
+  
     display: block;
     text-align: center;
     border-radius: 8px 8px 0 0;
-    /* Rounded corners at the top */
+
 }
 
 .card p {
@@ -123,7 +171,6 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
-    position: fixed;
     bottom: 0;
     width: 100%;
     display: flex;
@@ -131,59 +178,41 @@ footer {
     justify-content: center;
     gap: 10px;
 }
-
-
-
-
 .hamburger {
-    display: inline-block; /* Show hamburger menu */
-    cursor: pointer;
-    background-color: transparent;
-    border: none;
-    position: relative;
-    width: 30px;
-    height: 25px;
+    display: inline-block; 
+    background-color: #333; 
+    color: #f7f4f4; 
+    border: none; 
+    font-size: 2rem;
+    padding: 10px 15px; 
+    cursor: pointer; 
+    border-radius: 5px;
+    transition: background-color 0.3s ease; 
 }
 
-.hamburger::before,
-.hamburger::after,
-.hamburger {
-    content: '';
-    display: block;
-    background-color: #333; /* Change color as needed */
-    height: 3px;
-    margin: 6px 0;
-    transition: all 0.3s ease-in-out;
-}
 
-.hamburger.active::before {
-    transform: translateY(9px) rotate(45deg);
-}
 
-.hamburger.active::after {
-    transform: translateY(-9px) rotate(-45deg);
-}
-
-.hamburger.active {
-    background-color: transparent;
-}
-
-.hamburger:hover::before,
-.hamburger:hover::after,
 .hamburger:hover {
-    background-color: #555; /* Darker shade on hover */
+    background-color: #444; /* Slightly darker on hover for feedback */
 }
+
 
 .menu {
-    display: none; /* Hide menu items by default in mobile view */
+    display: none;
+    /* Hide menu items by default in mobile view */
 }
 
 .menu.active {
-    display: block; /* Show menu items when hamburger is active */
+    display: block;
+    /* Show menu items when hamburger is active */
+}
+
+.hero span.menu-active {
+    top: 100%; /* Adjust this value to move the span out of the way */
 }
 
 
-body.darkMode body{
+body.darkMode body {
     background-color: #333;
     color: #f0f0f0;
 }
@@ -225,7 +254,7 @@ body.dark-mode footer {
 #darkModeToggle:hover {
     background-color: #f0f0f0;
     color: #333;
-   
+
 }
 
 body.dark-mode #darkModeToggle {
@@ -239,7 +268,24 @@ body.dark-mode #darkModeToggle {
 
 body.dark-mode #darkModeToggle:hover {
     background-color: #333;
-    /* Dark background on hover in dark mode */
+    
     color: #f0f0f0;
-    /* Light text color on hover in dark mode */
+   
+}
+
+.map-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%; 
+    margin-bottom: 50px;
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  
 }

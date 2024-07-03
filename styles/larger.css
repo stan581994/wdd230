@@ -39,31 +39,7 @@
         text-align: center;
     }
 
-    /* background-color: #4CAF50; */
-
-    /* Position the dark mode toggle container */
-    .darkMode {
-        position: fixed; /* Use 'fixed' to keep it in view, or 'absolute' for within a positioned parent */
-        top: 10px; /* Adjust as needed */
-        right: 10px; /* Adjust as needed */
-        z-index: 1000; /* Ensure it's above other content */
-    }
-    
-    /* Style the dark mode toggle button */
-    #darkModeToggle {
-        background-color: #333; /* Dark background for contrast */
-        color: #fff; /* Light text color for visibility */
-        border: none; /* Remove default border */
-        padding: 10px 15px; /* Add some padding for a larger clickable area */
-        font-size: 1rem; /* Adjust font size as needed */
-        cursor: pointer; /* Change cursor to indicate it's clickable */
-        border-radius: 5px; /* Round the corners for a softer look */
-        transition: background-color 0.3s; /* Smooth transition for hover effect */
-    }
-    
-    #darkModeToggle:hover {
-        background-color: #555; /* Slightly lighter on hover for feedback */
-    }
+  
 
 
 }

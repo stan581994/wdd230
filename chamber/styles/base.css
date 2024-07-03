@@ -46,8 +46,9 @@ header h3 {
 /* Class to display menu */
 .showMenu {
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
 }
+
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -67,7 +68,8 @@ nav ul li a:hover {
 }
 
 .menu li:last-child {
-    margin-right: 30px; /* Adjust the value as needed */
+    margin-right: 30px;
+    /* Adjust the value as needed */
 }
 
 /* Hamburger Button Styling */
@@ -77,6 +79,7 @@ nav ul li a:hover {
     border: none;
     font-size: 24px;
     transition: transform 0.3s ease;
+    color: #FFD700;
 }
 
 /* Animation class for when the menu is open */
@@ -105,8 +108,10 @@ nav ul li a:hover {
     left: auto;
     top: auto;
     transform: none;
-    width: 90%; /* Adjust the width on smaller screens */
-    margin: 0 auto; /* Center the call-to-action */
+    width: 90%;
+    /* Adjust the width on smaller screens */
+    margin: 0 auto;
+    /* Center the call-to-action */
     padding: 10px;
 }
 
@@ -261,16 +266,17 @@ footer a {
     width: 100%;
     background: #333;
     text-align: center;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
     z-index: 1000;
 }
+
 .mobile-nav a {
     display: block;
     color: #FFD700;
     padding: 15px;
     text-decoration: none;
     list-style-type: none;
-     font-weight: bold;
+    font-weight: bold;
 }
 
 .mobile-nav a {
@@ -283,22 +289,159 @@ footer a {
 .nav {
     display: none;
 }
+
 .hamburger {
     cursor: pointer;
     display: block;
+    color: FFD700;
     /* Ensure the initial state is styled for the hamburger icon */
 }
+
 .mobile-nav {
-    display: none; /* Initially hidden */
-}
-.hamburger.is-active {
-    
-    font-size: 24px; /* Adjust size as needed */
-    line-height: 1; /* Adjust line height to center the "X" if needed */
-    transform: none; /* Remove any transformations */
+    display: none;
+    /* Initially hidden */
 }
 
-.hamburger.is-active:before, .hamburger.is-active:after {
-    content: none; /* Hide the pseudo-elements */
+.hamburger.is-active {
+
+    font-size: 24px;
+    /* Adjust size as needed */
+    line-height: 1;
+    /* Adjust line height to center the "X" if needed */
+    transform: none;
+    /* Remove any transformations */
+}
+
+.hamburger.is-active:before,
+.hamburger.is-active:after {
+    content: none;
+    /* Hide the pseudo-elements */
+}
+
+
+/** For Discove.html **/
+
+/* CSS */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    /* Sidebar to main content ratio */
+    gap: 20px;
+}
+
+.sidebar {
+    /* Sidebar styles */
+}
+
+.main-content {
+    /* Main content styles */
+}
+
+.main-content .photo {
+    margin-bottom: 20px;
+}
+
+.main-content .photo img {
+    width: 100%;
+    /* Ensure images are responsive */
+    height: auto;
+}
+
+
+/* CSS */
+.discover-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    /* Sidebar to main content ratio */
+    gap: 20px;
+}
+
+.sidebar {
+    /* Sidebar styles */
+}
+
+.main-content {
+    /* Main content styles */
+}
+
+.main-content .photo {
+    margin-bottom: 20px;
+}
+
+.main-content .photo img {
+    width: 100%;
+    /* Ensure images are responsive */
+    height: auto;
+}
+
+
+/* General sidebar styling */
+.sidebar {
+    background-color: #f4f4f4;
+    padding: 20px;
+    color: #333;
+    padding: 10px;
+}
+
+/* Ensures images within the sidebar are responsive */
+.sidebar img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Removes any default alignment */
+    margin: 0 auto; /* Centers the image */
+}
+
+/* Styling for the dividers */
+.sidebar hr {
+    border: 0;
+    height: 1px;
+    background-color: #ccc;
+    margin: 20px 0;
+}
+.sidebar h2 {
+    font-size: 18px;
+}
+
+/* Styling for the text to improve readability */
+.sidebar p {
+    line-height: 1.6;
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.sidebar .local-events {
+    border: 2px solid #007bff; /* Blue border */
+    padding: 5px;
+    margin-top: 20px;
+}
+
+.sidebar .statistics{
+    border: 2px solid #007bff; /* Blue border */
+    padding: 5px;
+    margin-top: 20px;
+}
+
+.calendar img{
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+
+}
+
+.userVisit {
+    border: 2px solid #007bff; /* Blue border */
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px; /* Rounded corners */
+    background-color: #f9f9f9; /* Light grey background */
+    font-family: 'Arial', sans-serif; /* Consistent font */
+    color: #333; /* Dark grey text color */
+}
+
+.userVisit p {
+    margin: 0; /* Remove default margin */
+    font-size: 16px; /* Slightly larger font size */
 }
 

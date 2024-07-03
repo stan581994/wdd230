@@ -87,7 +87,7 @@
         /* Show the nav by default on larger screens */
     }
 
-    .menu{
+    .menu {
 
         list-style-type: none;
         padding: 0;
@@ -118,7 +118,23 @@
     }
 
     .mobile-nav {
-        display: none !important; /* Use !important to override any inline styles */
+        display: none !important;
+        /* Use !important to override any inline styles */
+    }
+
+    .discover-container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        /* Sidebar to main content ratio */
+        gap: 20px;
+    }
+    .photo img {
+        transition: box-shadow 0.3s ease;
+    }
+    
+    .photo img:hover {
+        transform: rotate(5deg); /* Rotate the image slightly */
     }
 
 }

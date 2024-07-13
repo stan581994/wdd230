@@ -1,7 +1,31 @@
+:root {
+    --primary-color: #0056b3;
+    --secondary-color: #6c757d;
+    --background-color: #f0f0f0;
+    --text-color: #333;
+    --form-background-color: #ffffff;
+    --border-color: #ccc;
+    --border-radius: 0.25rem;
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --form-max-width: 50%;
+
+    --back: #003366;
+    --back2: hsla(192, 92%, 53%, 0.5);
+    --foredark: hsla(0, 0%, 10%, 1);
+    --forelight: #FFD700;
+    --border: hsla(0, 0%, 20%, .8);
+    --borderlight: hsla(0, 0%, 33%, .3);
+    --shadow: hsl(0, 0%, 50%);
+    --zebra: hsl(0, 0%, 93%, 1);
+    
+}
+
 body {
-    background-color: #F5F5F5;
-    color: #333333;
-    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 20px;
 }
 
 header {
@@ -445,3 +469,144 @@ footer a {
     font-size: 16px; /* Slightly larger font size */
 }
 
+form.form1 {
+    background-color: var(--form-background-color);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    padding: 20px;
+    margin: auto;
+    max-width: 90%;
+}
+form.form1 {
+    max-width: var(--form-max-width);
+}
+
+form.form1 label {
+    margin-bottom: 15px;
+    color: var(--text-color);
+}
+
+form.form1 input[type="text"],
+form.form1 input[type="email"],
+form.form1 input[type="tel"],
+form.form1 select,
+form.form1 textarea,
+form.form1 input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    box-sizing: border-box; /* Ensures padding does not affect overall width */
+}
+
+form.form1 input[type="submit"] {
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+form.form1 input[type="submit"]:hover {
+    background-color: #004494; /* Darker shade for better visibility */
+}
+
+
+/* ------------------------------  TABLES   --------------------------------  */
+.main-join {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px; /* Adds space between the divs */
+    padding: 20px;
+}
+
+.form-registration {
+    flex: 1;
+    min-width: 300px; /* Ensures the form doesn't get too narrow */
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.membership-benefits {
+    flex: 1;
+    min-width: 300px; /* Ensures the table doesn't get too narrow */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    overflow-x: auto; /* Ensures the table is scrollable on small screens */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    background-color:#003366;
+    color: #FFD700;
+    text-align: center;
+    vertical-align: middle;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+    text-align: center;
+    vertical-align: middle;
+}
+
+input[type="submit"] {
+    background-color: #04AA6D;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #037a50;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Makes sure padding doesn't increase the width */
+}
+
+.thankyou-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.thankyou-main h1 {
+    font-size: 2rem; /* Default font size for h1 */
+    color: #003366; /* Example color */
+    margin-bottom: 20px;
+}
+
+.thankyou-main p {
+    font-size: 1.25rem; /* Default font size for paragraph */
+    color: #666; /* Example color */
+}

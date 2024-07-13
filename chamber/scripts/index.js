@@ -49,3 +49,5 @@ document.querySelector('.userVisit p').innerText = message;
 
 // Step 5: Update the last visit date in localStorage
 localStorage.setItem('lastVisitDate', currentDate.toISOString());
+
+document.getElementById('timestamp').value = new Date().toISOString();

@@ -137,4 +137,30 @@
         transform: rotate(5deg); /* Rotate the image slightly */
     }
 
+
+    form.form1 {
+        background-color: var(--form-background-color);
+        border: 1px solid var(--border-color);
+        border-radius: var(--border-radius);
+        padding: 20px;
+        margin: auto;
+        max-width: 90%;
+    }
+
+    .main-join {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .main-join .form-registration {
+        flex: 1; /* Adjust the flex value as needed to manage space */
+        margin-right: 20px; /* Adds some space between the form and the next element */
+    }
+
+    .main-join .membership-benefits {
+        flex: 1; /* Adjust accordingly */
+        /* Additional styling for the membership benefits section */
+    }
+
 }

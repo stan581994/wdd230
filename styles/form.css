@@ -1,0 +1,156 @@
+:root {
+    --primary-color: #007bff;
+    --hover-color: #0056b3;
+    --border-radius: 4px;
+    --input-padding: 10px;
+    --button-padding: 10px 20px;
+}
+
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style the form */
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.form1 {
+    max-width: 500px;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"] {
+    width: 100%;
+    padding: var(--input-padding);
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: var(--border-radius);
+}
+
+input[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    background-color: var(--primary-color);
+    color: white;
+    padding: var(--button-padding);
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--hover-color);
+}
+
+
+
+/* Responsive Design */
+/* General styling for the range input */
+input[type="range"] {
+    -webkit-appearance: none;
+    /* Override default CSS styles */
+    appearance: none;
+    width: 100%;
+    /* Full-width */
+    height: 8px;
+    /* Specified height */
+    background: #ddd;
+    /* Grey background */
+    outline: none;
+    /* Remove outline */
+    opacity: 0.7;
+    /* Set transparency (optional) */
+    -webkit-transition: .2s;
+    /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+}
+
+/* Styling for the thumb (the slider control) */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    /* Override default CSS styles */
+    appearance: none;
+    width: 25px;
+    /* Width of the thumb */
+    height: 25px;
+    /* Height of the thumb */
+    background: #007bff;
+    /* Blue background */
+    cursor: pointer;
+    /* Cursor on hover */
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 25px;
+    /* Width of the thumb */
+    height: 25px;
+    /* Height of the thumb */
+    background: #007bff;
+    /* Blue background */
+    cursor: pointer;
+    /* Cursor on hover */
+}
+
+/* Styling for the track (the part the thumb slides over) */
+input[type="range"]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 8px;
+    background: #007bff;
+}
+
+input[type="range"]::-moz-range-track {
+    width: 100%;
+    height: 8px;
+    background: #007bff;
+}
+
+/* Optional: styling for the focus state of the thumb */
+input[type="range"]:focus::-webkit-slider-thumb {
+    background: #0056b3;
+}
+
+input[type="range"]:focus::-moz-range-thumb {
+    background: #0056b3;
+}
+
+.form1 {
+    padding: 10px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+input[type="submit"] {
+    padding: 8px;
+}

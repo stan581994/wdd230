@@ -15,6 +15,19 @@ darkModeToggle.addEventListener('click', () => {
 });
 
 
+document.getElementById('rpass').addEventListener('focusout', function() {
+    var password = document.getElementById('pass');
+    var repeatPassword = document.getElementById('rpass');
+    
+    if (password.value !== repeatPassword.value) {
+        alert('Passwords do not match. Please try again.');
+        password.value = ''; // Clear the password field
+        repeatPassword.value = ''; // Clear the repeat password field
+        password.focus(); // Set focus back to the password field
+    }
+});
+
+
 // VISIT COUNTER
 const visitsDisplay = document.querySelector(".visits");
 

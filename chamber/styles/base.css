@@ -537,8 +537,7 @@ form.form1 input[type="submit"]:hover {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    overflow-x: auto; /* Ensures the table is scrollable on small screens */
-}
+    overflow-x: auto; 
 
 table {
     width: 100%;

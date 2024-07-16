@@ -29,7 +29,7 @@
         height: auto;
     }
 
-    /* Style the call-to-action section for larger screens */
+ 
     .hero .call-to-action {
         position: absolute;
         top: 50%;
@@ -38,10 +38,10 @@
         color: white;
         text-align: center;
         max-width: 300px;
-        /* Adjust based on preference */
+ 
         padding: 20px;
         background-color: rgba(0, 0, 0, 0.5);
-        /* Semi-transparent background */
+      
     }
 
 
@@ -49,13 +49,13 @@
     .call-to-action h3 {
         margin-bottom: 15px;
         font-size: 34px;
-        /* Adjust font size as needed */
+       
     }
 
     .call-to-action p {
         margin-bottom: 20px;
         font-size: 16px;
-        /* Adjust font size as needed */
+       
     }
 
     .call-to-action a {
@@ -72,19 +72,19 @@
 
     .call-to-action a:hover {
         background-color: #E6C200;
-        /* Slightly darker shade for hover effect */
+       
     }
 
 
-    /* Hamburger Menu Button - hide it on larger screens */
+    
     .hamburger {
         display: none;
     }
 
-    /* Navigation Menu */
+
     .nav {
         display: flex;
-        /* Show the nav by default on larger screens */
+
     }
 
     .menu {
@@ -93,7 +93,7 @@
         padding: 0;
         display: flex;
         gap: 20px;
-        /* Space between navigation items */
+      
     }
 
 
@@ -101,13 +101,12 @@
         list-style-type: none;
         padding: 0;
         display: block;
-        /* Space between navigation items */
-    }
+      
 
 
     .menu li a {
         padding: 10px;
-        /* Adjust padding or any other styles for larger screens */
+        
     }
 
     nav ul li a {
@@ -119,14 +118,14 @@
 
     .mobile-nav {
         display: none !important;
-        /* Use !important to override any inline styles */
+        
     }
 
     .discover-container {
         width: 100%;
         display: grid;
         grid-template-columns: 1fr 3fr;
-        /* Sidebar to main content ratio */
+       
         gap: 20px;
     }
     .photo img {
@@ -134,7 +133,7 @@
     }
     
     .photo img:hover {
-        transform: rotate(5deg); /* Rotate the image slightly */
+        transform: rotate(5deg); 
     }
 
 
@@ -154,13 +153,11 @@
     }
 
     .main-join .form-registration {
-        flex: 1; /* Adjust the flex value as needed to manage space */
-        margin-right: 20px; /* Adds some space between the form and the next element */
-    }
+        flex: 1; 
+        margin-right: 20px; 
 
     .main-join .membership-benefits {
-        flex: 1; /* Adjust accordingly */
-        /* Additional styling for the membership benefits section */
+        flex: 1; 
     }
 
 }

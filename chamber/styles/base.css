@@ -587,7 +587,7 @@ input[type="text"], input[type="email"], input[type="tel"], select, textarea {
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 4px;
-    box-sizing: border-box; /* Makes sure padding doesn't increase the width */
+    box-sizing: border-box; 
 }
 
 .thankyou-main {
@@ -601,12 +601,12 @@ input[type="text"], input[type="email"], input[type="tel"], select, textarea {
 }
 
 .thankyou-main h1 {
-    font-size: 2rem; /* Default font size for h1 */
-    color: #003366; /* Example color */
+    font-size: 2rem; 
+    color: #003366; 
     margin-bottom: 20px;
 }
 
 .thankyou-main p {
-    font-size: 1.25rem; /* Default font size for paragraph */
-    color: #666; /* Example color */
+    font-size: 1.25rem; 
+    color: #666; 
 }

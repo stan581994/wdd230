@@ -1,0 +1,89 @@
+{
+    "weeks": [
+        {
+            "week": "Week 1",
+            "links": [
+                {
+                    "title": "Holy Grail",
+                    "url": "week01/holygrail.html"
+                },
+                {
+                    "title": "Media Query",
+                    "url": "week01/media-query.html"
+                }
+            ]
+        },
+        {
+            "week": "Week 2",
+            "links": [
+                {
+                    "title": "codePen assignment",
+                    "url": "https://codepen.io/stan581994/pen/NWVzYpx"
+                },
+                {
+                    "title": "Book of Mormon Favorite Chapter List",
+                    "url": "week02/bom.html"
+                }
+            ]
+        },
+        {
+            "week": "Week 3",
+            "links": [
+                {
+                    "title": "WebP",
+                    "url": "week03/images/landscape.webp"
+                },
+                {
+                    "title": "Lazy Load web page",
+                    "url": "week03/lazyload.html"
+                },
+                {
+                    "title": "responsive-images",
+                    "url": "week03/responsive-images.html"
+                },
+                {
+                    "title": "Local Storage",
+                    "url": "week03/bom.html"
+                }
+            ]
+        },
+        {
+            "week": "Week 4",
+            "links": [
+                {
+                    "title": "CSS Pseudo-Classes",
+                    "url": "https://codepen.io/stan581994/pen/OJePaRx"
+                },
+                {
+                    "title": "W3School Activity",
+                    "url": "week 4/images/w3school_activity_result.png"
+                },
+                {
+                    "title": "HTML Forms",
+                    "url": "week 4/index.html"
+                }
+            ]
+        },
+        {
+            "week": "Week 5",
+            "links": [
+                {
+                    "title": "CSS Pseudo-elements",
+                    "url": "https://codepen.io/stan581994/pen/KKjdRLK"
+                },
+                {
+                    "title": "JSON - new-ward-members",
+                    "url": "week05/new-ward-members.json"
+                },
+                {
+                    "title": "CSS Pseudo-elements",
+                    "url": "https://codepen.io/stan581994/pen/KKjdRLK"
+                },
+                {
+                    "title": "Weather Forecast",
+                    "url": "week05/weather.html"
+                }
+            ]
+        }
+    ]
+}

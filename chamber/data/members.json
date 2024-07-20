@@ -1,0 +1,72 @@
+[
+  {
+	"name": "Local Artisans Co-op",
+	"address": "1122 Crafters Lane, Artisan Valley, AV 34567",
+	"phone": "+1-555-1000",
+	"website": "https://localartisansco-op.com",
+	"image": "local_artisans_logo.png",
+	"membershipLevel": "Gold",
+	"sector": "Arts & Crafts",
+	"description": "A cooperative of local artists and craftsmen bringing unique, handmade goods to the market."
+  },
+  {
+	"name": "GreenTech Innovations",
+	"address": "2233 Eco Drive, Sustainable City, SC 45678",
+	"phone": "+1-555-2000",
+	"website": "https://greentechinnovations.com",
+	"image": "greentech_logo.png",
+	"membershipLevel": "Platinum",
+	"sector": "Technology",
+	"description": "Pioneering sustainable technology solutions for a greener tomorrow."
+  },
+  {
+	"name": "Farm Fresh Groceries",
+	"address": "3344 Harvest Rd, Farmville, FV 56789",
+	"phone": "+1-555-3000",
+	"website": "https://farmfreshgroceries.com",
+	"image": "farm_fresh_logo.png",
+	"membershipLevel": "Silver",
+	"sector": "Agriculture",
+	"description": "Connecting you with the freshest, locally-sourced produce and goods."
+  },
+  {
+	"name": "TechStart Hub",
+	"address": "4455 Innovation Way, Tech City, TC 67890",
+	"phone": "+1-555-4000",
+	"website": "https://techstarthub.com",
+	"image": "techstart_logo.png",
+	"membershipLevel": "Gold",
+	"sector": "Business Incubator",
+	"description": "A hub for tech startups to collaborate, innovate, and grow."
+  },
+  {
+	"name": "EcoClean Solutions",
+	"address": "5566 Green St, Clean City, CC 78901",
+	"phone": "+1-555-5000",
+	"website": "https://ecocleansolutions.com",
+	"image": "ecoclean_logo.png",
+	"membershipLevel": "Silver",
+	"sector": "Environmental Services",
+	"description": "Providing eco-friendly cleaning solutions for homes and businesses."
+  },
+  {
+	"name": "Community Health Initiative",
+	"address": "6677 Wellness Ave, Healthy City, HC 89012",
+	"phone": "+1-555-6000",
+	"website": "https://communityhealthinitiative.com",
+	"image": "community_health_logo.png",
+	"membershipLevel": "Bronze",
+	"sector": "Healthcare",
+	"description": "A non-profit organization dedicated to improving community health through outreach and education."
+  },
+  {
+	"name": "NextGen Educators",
+	"address": "7788 Knowledge Ln, Education City, EC 90123",
+	"phone": "+1-555-7000",
+	"website": "https://nextgeneducators.com",
+	"image": "nextgen_educators_logo.png",
+	"membershipLevel": "Gold",
+	"sector": "Education",
+	"description": "Innovative educational programs and resources for the next generation of learners."
+  }
+]

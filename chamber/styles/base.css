@@ -538,6 +538,7 @@ form.form1 input[type="submit"]:hover {
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     overflow-x: auto; 
+}
 
 table {
     width: 100%;
@@ -609,3 +610,23 @@ input[type="text"], input[type="email"], input[type="tel"], select, textarea {
     font-size: 1.25rem; 
     color: #666; 
 }
+
+.member-card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    display: inline-block;
+    width: 200px;
+  }
+  
+  .member-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .member-name, .member-details {
+    margin-top: 10px;
+    text-align: center;
+  }

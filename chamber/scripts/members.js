@@ -35,7 +35,7 @@ async function fetchMembers() {
 
 	// Create a paragraph for other details (optional)
 	const details = document.createElement('p');
-	details.textContent = `Details: ${member.details}`;
+	details.textContent = `Details: ${member.description}`;
 	details.className = 'member-details';
 
      // Create a paragraph for the membership level

@@ -4,7 +4,7 @@
 	"address": "1122 Crafters Lane, Artisan Valley, AV 34567",
 	"phone": "+1-555-1000",
 	"website": "https://localartisansco-op.com",
-	"image": "local_artisans_logo.png",
+	"image": "https://mir-s3-cdn-cf.behance.net/projects/404/ea2c04122008067.Y3JvcCwxOTE3LDE1MDAsNDIsMA.jpg",
 	"membershipLevel": "Bronze Membership",
 	"sector": "Arts & Crafts",
 	"description": "A cooperative of local artists and craftsmen bringing unique, handmade goods to the market."
@@ -14,7 +14,7 @@
 	"address": "2233 Eco Drive, Sustainable City, SC 45678",
 	"phone": "+1-555-2000",
 	"website": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS99rOiwpFTj2j-pBFsC37jKyOnbWYbpoT3cg&s",
-	"image": "greentech_logo.png",
+	"image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS99rOiwpFTj2j-pBFsC37jKyOnbWYbpoT3cg&s",
 	"membershipLevel": "Platinum",
 	"sector": "Technology",
 	"description": "Pioneering sustainable technology solutions for a greener tomorrow."
@@ -24,7 +24,7 @@
 	"address": "3344 Harvest Rd, Farmville, FV 56789",
 	"phone": "+1-555-3000",
 	"website": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIOsxyEEGFj1PMjIZ-mpqTHgZMaMWRXHL3gQ&s",
-	"image": "farm_fresh_logo.png",
+	"image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIOsxyEEGFj1PMjIZ-mpqTHgZMaMWRXHL3gQ&s",
 	"membershipLevel": "Bronze Membership",
 	"sector": "Agriculture",
 	"description": "Connecting you with the freshest, locally-sourced produce and goods."
@@ -44,7 +44,7 @@
 	"address": "5566 Green St, Clean City, CC 78901",
 	"phone": "+1-555-5000",
 	"website": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCI5YnC65JDUYLGa7lm0utM0yYF-dleWzeOw&s",
-	"image": "ecoclean_logo.png",
+	"image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCI5YnC65JDUYLGa7lm0utM0yYF-dleWzeOw&s",
 	"membershipLevel": "Silver Membership",
 	"sector": "Environmental Services",
 	"description": "Providing eco-friendly cleaning solutions for homes and businesses."
@@ -54,7 +54,7 @@
 	"address": "6677 Wellness Ave, Healthy City, HC 89012",
 	"phone": "+1-555-6000",
 	"website": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwB3-355fxWtpcdN_nT7hkXKKJKooFirT99Q&s",
-	"image": "community_health_logo.png",
+	"image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwB3-355fxWtpcdN_nT7hkXKKJKooFirT99Q&s",
 	"membershipLevel": "Gold Membership",
 	"sector": "Healthcare",
 	"description": "A non-profit organization dedicated to improving community health through outreach and education."
@@ -64,7 +64,7 @@
 	"address": "7788 Knowledge Ln, Education City, EC 90123",
 	"phone": "+1-555-7000",
 	"website": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFL8laHHqZkC63Q5y5rJpkFbmsyhPY6VoMPA&s",
-	"image": "nextgen_educators_logo.png",
+	"image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFL8laHHqZkC63Q5y5rJpkFbmsyhPY6VoMPA&s",
 	"membershipLevel": "NP Membership",
 	"sector": "Education",
 	"description": "Innovative educational programs and resources for the next generation of learners."

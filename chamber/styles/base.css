@@ -686,8 +686,6 @@ textarea {
 }
 
 
-
-
 .titleHeader {
     display: flex; /* Enables flexbox */
     justify-content: center; /* Centers children horizontally */
@@ -722,3 +720,7 @@ textarea {
     background-color: #0056b3;
     /* Darkens the button on hover for a visual feedback */
 }
+
+#membersContainerText {
+    display: none;
+  }

@@ -138,11 +138,15 @@ document.getElementById('toggleViewBtn').addEventListener('click', function () {
   // Check if the container currently has the class for grid view
   if (container.classList.contains('grid-view')) {
     container.classList.remove('grid-view'); // Remove grid view class
-    container.style.display = 'none'; // Hide grid container
-    containerText.style.display = ''; // Show text container
+    
+    container.style.display = ''; // Show grid container
+    containerText.style.display = 'none'; // Hide text container+
+
   } else {
     container.classList.add('grid-view'); // Add grid view class
-    container.style.display = ''; // Show grid container
-    containerText.style.display = 'none'; // Hide text container
+
+
+    container.style.display = 'none'; // Hide grid container
+    containerText.style.display = 'block'; // Show text container
   }
 });

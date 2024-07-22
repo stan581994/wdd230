@@ -17,7 +17,7 @@
     --borderlight: hsla(0, 0%, 33%, .3);
     --shadow: hsl(0, 0%, 50%);
     --zebra: hsl(0, 0%, 93%, 1);
-    
+
 }
 
 body {
@@ -412,8 +412,10 @@ footer a {
 .sidebar img {
     max-width: 100%;
     height: auto;
-    display: block; /* Removes any default alignment */
-    margin: 0 auto; /* Centers the image */
+    display: block;
+    /* Removes any default alignment */
+    margin: 0 auto;
+    /* Centers the image */
 }
 
 /* Styling for the dividers */
@@ -423,6 +425,7 @@ footer a {
     background-color: #ccc;
     margin: 20px 0;
 }
+
 .sidebar h2 {
     font-size: 18px;
 }
@@ -435,18 +438,20 @@ footer a {
 }
 
 .sidebar .local-events {
-    border: 2px solid #007bff; /* Blue border */
+    border: 2px solid #007bff;
+    /* Blue border */
     padding: 5px;
     margin-top: 20px;
 }
 
-.sidebar .statistics{
-    border: 2px solid #007bff; /* Blue border */
+.sidebar .statistics {
+    border: 2px solid #007bff;
+    /* Blue border */
     padding: 5px;
     margin-top: 20px;
 }
 
-.calendar img{
+.calendar img {
     width: 100%;
     height: auto;
     max-height: 500px;
@@ -455,18 +460,25 @@ footer a {
 }
 
 .userVisit {
-    border: 2px solid #007bff; /* Blue border */
+    border: 2px solid #007bff;
+    /* Blue border */
     padding: 20px;
     margin: 20px 0;
-    border-radius: 5px; /* Rounded corners */
-    background-color: #f9f9f9; /* Light grey background */
-    font-family: 'Arial', sans-serif; /* Consistent font */
-    color: #333; /* Dark grey text color */
+    border-radius: 5px;
+    /* Rounded corners */
+    background-color: #f9f9f9;
+    /* Light grey background */
+    font-family: 'Arial', sans-serif;
+    /* Consistent font */
+    color: #333;
+    /* Dark grey text color */
 }
 
 .userVisit p {
-    margin: 0; /* Remove default margin */
-    font-size: 16px; /* Slightly larger font size */
+    margin: 0;
+    /* Remove default margin */
+    font-size: 16px;
+    /* Slightly larger font size */
 }
 
 form.form1 {
@@ -477,6 +489,7 @@ form.form1 {
     margin: auto;
     max-width: 90%;
 }
+
 form.form1 {
     max-width: var(--form-max-width);
 }
@@ -497,7 +510,8 @@ form.form1 input[type="submit"] {
     margin-top: 5px;
     border: 1px solid var(--border-color);
     border-radius: var(--border-radius);
-    box-sizing: border-box; /* Ensures padding does not affect overall width */
+    box-sizing: border-box;
+    /* Ensures padding does not affect overall width */
 }
 
 form.form1 input[type="submit"] {
@@ -508,7 +522,8 @@ form.form1 input[type="submit"] {
 }
 
 form.form1 input[type="submit"]:hover {
-    background-color: #004494; /* Darker shade for better visibility */
+    background-color: #004494;
+    /* Darker shade for better visibility */
 }
 
 
@@ -517,27 +532,30 @@ form.form1 input[type="submit"]:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    gap: 20px; /* Adds space between the divs */
+    gap: 20px;
+    /* Adds space between the divs */
     padding: 20px;
 }
 
 .form-registration {
     flex: 1;
-    min-width: 300px; /* Ensures the form doesn't get too narrow */
+    min-width: 300px;
+    /* Ensures the form doesn't get too narrow */
     background-color: #f9f9f9;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .membership-benefits {
     flex: 1;
-    min-width: 300px; /* Ensures the table doesn't get too narrow */
+    min-width: 300px;
+    /* Ensures the table doesn't get too narrow */
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    overflow-x: auto; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
 }
 
 table {
@@ -545,17 +563,20 @@ table {
     border-collapse: collapse;
 }
 
-table, th, td {
+table,
+th,
+td {
     border: 1px solid #ddd;
 }
 
-th, td {
+th,
+td {
     text-align: left;
     padding: 8px;
 }
 
 th {
-    background-color:#003366;
+    background-color: #003366;
     color: #FFD700;
     text-align: center;
     vertical-align: middle;
@@ -580,14 +601,18 @@ input[type="submit"]:hover {
     background-color: #037a50;
 }
 
-input[type="text"], input[type="email"], input[type="tel"], select, textarea {
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
     width: 100%;
     padding: 10px;
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 4px;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 .thankyou-main {
@@ -601,32 +626,99 @@ input[type="text"], input[type="email"], input[type="tel"], select, textarea {
 }
 
 .thankyou-main h1 {
-    font-size: 2rem; 
-    color: #003366; 
+    font-size: 2rem;
+    color: #003366;
     margin-bottom: 20px;
 }
 
 .thankyou-main p {
-    font-size: 1.25rem; 
-    color: #666; 
+    font-size: 1.25rem;
+    color: #666;
 }
 
 .member-card {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 10px;
-    padding: 20px;
+    margin: 20px;
     border-radius: 8px;
-    display: inline-block;
-    width: 200px;
-  }
-  
-  .member-image {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.member-image-div {
     width: 100%;
     height: auto;
-    border-radius: 8px;
-  }
-  
-  .member-name, .member-details {
-    margin-top: 10px;
-    text-align: center;
-  }
+    overflow: hidden;
+}
+
+.member-image-div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.member-details-div {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.member-address,
+.member-phone,
+.member-details,
+.member-membership-level {
+    margin-bottom: 10px;
+    /* Adds space between each detail */
+}
+
+.member-name {
+    font-weight: bold;
+    margin-bottom: 10px;
+    /* Adds space below the name */
+}
+
+#membersContainer {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+
+
+
+.titleHeader {
+    display: flex; /* Enables flexbox */
+    justify-content: center; /* Centers children horizontally */
+    align-items: center; /* Centers children vertically (if you have multiple lines of text or elements) */
+    margin: 20px 0; /* Keeps your existing spacing */
+    flex-direction: column; /* Stacks children vertically */
+}
+
+.titleHeader h1 {
+    font-size: 2em; /* Keeps your existing font size */
+    margin-bottom: 0.5em; /* Adjust or remove based on your layout needs */
+}
+
+#toggleViewBtn {
+    font-size: 1em;
+    /* Adjusts the font size of the button */
+    padding: 10px 20px;
+    /* Adds padding inside the button for better touch */
+    background-color: #007bff;
+    /* Sets a background color */
+    color: white;
+    /* Sets the text color */
+    border: none;
+    /* Removes the border */
+    border-radius: 5px;
+    /* Rounds the corners of the button */
+    cursor: pointer;
+    /* Changes the cursor to a pointer on hover */
+}
+
+#toggleViewBtn:hover {
+    background-color: #0056b3;
+    /* Darkens the button on hover for a visual feedback */
+}

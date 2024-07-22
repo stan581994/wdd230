@@ -101,6 +101,7 @@
         list-style-type: none;
         padding: 0;
         display: block;
+    }
       
 
 
@@ -155,9 +156,11 @@
     .main-join .form-registration {
         flex: 1; 
         margin-right: 20px; 
+    }
 
     .main-join .membership-benefits {
         flex: 1; 
     }
 
 }
+

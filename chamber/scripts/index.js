@@ -1,3 +1,12 @@
+const events = [
+  { title: "Community Clean-Up", description: "Join us this Saturday for a community clean-up event at the local park." },
+  { title: "Charity Bake Sale", description: "Support our local charity by buying some delicious homemade treats." },
+  { title: "Outdoor Concert", description: "Enjoy an evening of live music at the downtown plaza this Friday." },
+  { title: "Art Exhibition", description: "Explore the latest art exhibition featuring local artists at the city gallery." },
+  { title: "Tech Workshop", description: "Learn about the latest in technology at our free workshop next week." }
+];
+
+
 document.getElementById('lastModified').textContent = new Date(document.lastModified).toLocaleDateString();
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -16,6 +25,9 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+// Call the function to display events
+displayEvents();
 
 generateAds();  
 
@@ -70,7 +82,6 @@ function closeBanner() {
 }
 // Assuming this is added after the closeBanner function
 async function generateAds() {
-  console.log('Generating ads...');
     try {
         // Fetch data from members.json
         const response = await fetch('https://stan581994.github.io/wdd230/chamber/data/members.json');
@@ -78,7 +89,6 @@ async function generateAds() {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
         const data = await response.json();
-        console.log(data);
 
         const eligibleCompanies = data.filter(company => 
             company.membershipLevel === "Silver Membership" || 
@@ -115,4 +125,24 @@ function populateCompanies(companies) {
         container.innerHTML += companyHTML;
     });
 }
+
+
+// Function to generate random events
+function generateRandomEvents(numEvents) {
+  const shuffled = events.sort(() => 0.5 - Math.random()); // Shuffle the array
+  return shuffled.slice(0, numEvents); // Get the first `numEvents` items
+}
+
+// Function to display events
+function displayEvents() {
+  const eventsContainer = document.getElementById('events-container');
+  const randomEvents = generateRandomEvents(2); // Generate 2 random events
+
+  randomEvents.forEach(event => {
+      const eventElement = document.createElement('div');
+      eventElement.innerHTML = `<h4>${event.title}</h4><p>${event.description}</p><hr>`;
+      eventsContainer.appendChild(eventElement);
+  });
+}
+
 

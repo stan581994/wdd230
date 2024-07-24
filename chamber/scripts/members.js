@@ -2,6 +2,7 @@ async function fetchMembers() {
   // Fetch data from member.json
   const response = await fetch('https://stan581994.github.io/wdd230/chamber/data/members.json');
   const members = await response.json();
+  console.log(members);
 
   // Select the container where the cards will be displayed
   const container = document.getElementById('membersContainer');

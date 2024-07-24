@@ -185,23 +185,24 @@ footer a {
     gap: 20px;
 }
 
-.weather-card {
+.weather-card,
+.event-card {
     background-color: #f9f9f9;
-    /* Light background for the card */
+   
     border-radius: 10px;
-    /* Rounded corners */
+  
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    /* Subtle shadow for depth */
+
     padding: 20px;
-    /* Spacing inside the card */
+
     max-width: 300px;
-    /* Maximum width of the card */
+
     margin: 20px auto;
-    /* Center the card with margin */
+ 
     text-align: center;
-    /* Center the text */
+
     font-family: 'Arial', sans-serif;
-    /* Font styling */
+
 }
 
 .weather-card h3 {
@@ -212,17 +213,17 @@ footer a {
 }
 
 .weather-card img {
+    width: 50%;
     margin-bottom: 15px;
     /* Space below the image */
 }
 
 .weather-card p {
     color: #666;
-    /* Lighter text color for the paragraph */
     line-height: 1.5;
-    /* Spacing between lines */
     margin-bottom: 10px;
-    /* Space below each paragraph */
+    text-align: left;
+
 }
 
 .weather-card strong {
@@ -230,23 +231,77 @@ footer a {
     /* Bold text color */
 }
 
+
+.purpose-card {
+    background-color: var(--back); 
+    color: white;
+    padding: 20px; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin: 20px 0;
+}
+
+.purpose-card h3 {
+    background-color: var(--forelight); 
+    padding: 10px;
+    margin: -20px -20px 20px -20px; 
+    border-radius: 8px 8px 0 0; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    text-align: center;
+}
+
+.purpose-card p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.purpose-card strong {
+    color: #ffd700; 
+}
 .company-grid-container {
     display: flex;
-    justify-content: center;
-    /* Center the content */
-    padding: 20px;
+    justify-content: space-between; 
+    flex-wrap: wrap; 
 }
 
 .company-spotlights {
     display: flex;
-    flex-wrap: wrap;
-    /* Allow items to wrap as needed */
-    gap: 20px;
-    /* Space between the spotlight items */
-    justify-content: center;
-    /* Center the spotlight items */
-    max-width: 1200px;
-    /* Maximum width of the container */
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+    gap: 50px;
+}
+
+.company-spotlights > div { 
+    flex: 1; 
+    max-width: 33.33%; 
+    box-sizing: border-box; 
+    padding: 10px; 
+   
+}
+
+.company {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin: 20px 0; 
+    padding: 20px; 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    background-color: #ffffff; 
+    transition: transform 0.2s;
+}
+
+.company h4 {
+    color: #007BFF; 
+    margin-bottom: 15px; 
+    text-align: center;
+}
+
+.company p {
+    color: #333; /* Dark grey color for text */
+    line-height: 1.5; /* Spacing between lines of text */
+}
+
+.company:hover {
+    transform: scale(1.05); /* Slightly scale up the ad on hover */
 }
 
 .spotlight {
@@ -687,16 +742,23 @@ textarea {
 
 
 .titleHeader {
-    display: flex; /* Enables flexbox */
-    justify-content: center; /* Centers children horizontally */
-    align-items: center; /* Centers children vertically (if you have multiple lines of text or elements) */
-    margin: 20px 0; /* Keeps your existing spacing */
-    flex-direction: column; /* Stacks children vertically */
+    display: flex;
+    /* Enables flexbox */
+    justify-content: center;
+    /* Centers children horizontally */
+    align-items: center;
+    /* Centers children vertically (if you have multiple lines of text or elements) */
+    margin: 20px 0;
+    /* Keeps your existing spacing */
+    flex-direction: column;
+    /* Stacks children vertically */
 }
 
 .titleHeader h1 {
-    font-size: 2em; /* Keeps your existing font size */
-    margin-bottom: 0.5em; /* Adjust or remove based on your layout needs */
+    font-size: 2em;
+    /* Keeps your existing font size */
+    margin-bottom: 0.5em;
+    /* Adjust or remove based on your layout needs */
 }
 
 #toggleViewBtn {
@@ -723,4 +785,23 @@ textarea {
 
 #membersContainerText {
     display: none;
-  }
+}
+
+.banner {
+    background-color: #007bff; /* Blue background */
+    color: white; /* White text */
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.banner button {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}

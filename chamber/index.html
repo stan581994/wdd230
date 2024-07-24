@@ -52,12 +52,16 @@
             </ul>
         </nav>
     </header>
-     <!-- Mobile Navigation -->
-     <div class="mobile-nav" id="mobileNav">
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobileNav">
         <a href="index.html">Home</a>
         <a href="discover.html">Discovery</a>
         <a href="discover.html">Directory</a>
         <a href="join.html">Join Us</a>
+    </div>
+    <div id="meetGreetBanner" class="banner">
+        <h3>Join us for the Chamber of Commerce Meet and Greet on Wednesday at 7:00 p.m.!</h3>
+        <button onclick="closeBanner()">❌</button>
     </div>
     <div>
         <section class="hero">
@@ -71,48 +75,38 @@
     </div>
     <main>
         <div class="grid-container">
-            <section class="weather-card">
+            <section class="purpose-card">
                 <h3>Current Events</h3>
                 <p>Check out our latest events happening in the community.</p>
             </section>
-            <section class="weather-card">
+
+            <section class="purpose-card">
                 <h3>Site Purpose</h3>
-                <p>1. Business Support and Resources: The website will serve as a central hub for local businesses in
+                <p> <strong>Business Support and Resources:</strong> The website will serve as a central hub for local
+                    businesses in
                     Dasmarinas, providing valuable resources such as business directories, industry news, and
                     educational materials. By offering access to best practices, market insights, and regulatory
                     updates, the site aims to empower businesses to thrive and grow within the community.</p>
+                <p><strong>Member Services and Benefits: </strong> Offering a range of exclusive benefits, the website
+                    will detail
+                    membership advantages such as discounts, services, and access to premium content. These benefits are
+                    designed to add value and support the operational needs of businesses.</p>
             </section>
+
             <section class="weather-card">
                 <h3>Weather Today</h3>
-                <img src="images/sun.png" alt="Sunny Weather" style="width:100px;height:auto;">
+                <img id="weather-icon">
                 <!-- Image representing sunny weather -->
-                <p><strong>Temperature:</strong> 24°C</p>
-                <p><strong>Condition:</strong> Partly Clouded</p>
-                <p><strong>Humidity:</strong> 60%</p>
-                <p><strong>Wind Chill:</strong> 5°C</p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
             </section>
         </div>
 
         <div class="company-grid-container">
-            <section class="company-spotlights">
-                <div class="spotlight">
-                    <h4>Company One</h4>
-                    <p>Leading the industry in innovation.</p>
-                    <p>+63999340453434</p>
-                    <p>wwww.google.com</p>
-                </div>
-                <div class="spotlight">
-                    <h4>Company Two</h4>
-                    <p>Committed to community service.</p>
-                    <p>+63999340453434</p>
-                    <p>wwww.google.com</p>
-                </div>
-                <div class="spotlight">
-                    <h4>Company Three</h4>
-                    <p>Your trusted partner in success.</p>
-                    <p>+63999340453434</p>
-                    <p>wwww.google.com</p>
-                </div>
+            <section class="company-spotlights" id="companySpotlights">
+                <!-- Dynamic content will be loaded here -->
             </section>
         </div>
     </main>
@@ -123,6 +117,8 @@
         <p>Last modified: <span id="lastModified"></span></p>
     </footer>
 
+
+    <script src="scripts/weather.js"></script>
     <script src="scripts/index.js"></script>
 </body>
 

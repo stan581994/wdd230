@@ -1,15 +1,10 @@
 @media (min-width: 768px) {
     .grid-container {
-        display: flex;
-
-        flex-direction: row;
-
-        justify-content: center;
-
-        flex-wrap: wrap;
-
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr; /* Left and right columns are 1fr, middle column is 2fr */
+        gap:20px;
     }
-
+    
     .company-spotlights {
         display: flex;
         flex-direction: row;
